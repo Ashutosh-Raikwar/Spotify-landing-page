@@ -1,5 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+@media screen and (max-width:650px){
+    body>main>section>button{
+        width: 100%;
+    }
+}
+
 body{
     margin:0px;
     background-color:rgb(25, 20, 20) ;
@@ -36,4 +43,35 @@ nav ul{
 
 nav ul li a:hover{
     color: rgb(30, 215, 96);
+}
+
+#download{
+    background-color: inherit;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+#download>:first-child{
+    font-weight: 700;
+    line-height: 2;
+}
+
+#download>:nth-child(2){
+    font-weight: 500;
+    line-height: 3;
+}
+
+#download section button{
+    background-color:rgb(255, 255, 255) ;
+    padding: 12px;
+    margin-bottom: 35px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:'Poppins', sans-serif;
+}
+
+button:hover{
+    transform: scale(1.02);
 }
