@@ -119,3 +119,83 @@ th{
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
 }
+
+/* Article Section */
+
+#premium{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+#premium h2{
+    margin: 0px;
+}
+
+#premium .price-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    text-align: left;
+    padding: 20px 100px;
+}
+
+#premium .price-cards article{
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(170, 170, 170);
+    padding: 20px;
+}
+
+#premium .card-header{
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+#premium .card-header span{
+    display: inline-block;
+    width: max-content;
+    font-size: 0.75rem;
+    background-color: rgb(13, 114, 234);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#premium .card-header h3{
+    margin-bottom: 0;
+}
+
+#premium .card-header p{
+    margin: 0;
+    font-weight: 300;
+}
+
+#premium .card-body li{
+    font-weight: 500;
+}
+
+#premium .price-cards button{
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#premium .price-cards button:hover{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 650px){
+    #premium .price-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        padding: 20px;
+    }
+}
